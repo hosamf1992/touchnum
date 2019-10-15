@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Touch the nums!</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="container" onload="init()">
+    <h2>Chose your level: </h2>
+    <input type="radio" onclick="init()" name="radioBtn" value="16" checked> Easy 16<br>
+    <input type="radio" onclick="init()" name="radioBtn" value="25"> Hard 25<br>
+    <input type="radio" onclick="init()" name="radioBtn" value="36"> Extreme 36!<br>
+
+
+
+    <h2>Number is: <span class='number'></span></h2>
+
+    <h2>Game time is: <span class='timer'></span></h2>
+
+    <table class="board" border="1" cellpadding="10">
+        <tbody class="board"></tbody>
+    </table>
+
+
+
+
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>
